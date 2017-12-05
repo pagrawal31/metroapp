@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_search_route"
+            android:icon="@drawable/ic_route"
+            android:title="@string/title_search_route" />
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/title_home" />
+
+        <item
+            android:id="@+id/nav_stations"
+            android:icon="@drawable/ic_station"
+            android:title="@string/title_station" />
+
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="@string/title_metro_map" />
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_news"
+            android:title="@string/title_news" />
+
+        <item
+            android:id="@+id/nav_stories"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/title_stories" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_thumb_up_black_24dp"
+                android:title="Rate and Comment" />
+
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_email_black_24dp"
+                android:title="@string/title_feedback" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/information_outline"
+                android:title="@string/title_about" />
+
+        </menu>
+    </item>
+
+</menu>

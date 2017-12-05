@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText android:textSize="20.0sp" android:textColor="@android:color/black"
+            android:id="@+id/edittxt_select_item" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin"
+            android:hint="@string/type_text_to_select_stations" android:maxLines="1" android:scrollHorizontally="true"
+            android:layout_centerHorizontal="true" android:inputType="textFilter"
+            android:layout_weight="3"/>
+
+        <ImageView android:id="@+id/station_search_icon" android:layout_width="48.0dip"
+            android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="16.0dip"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_search_black_24dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_station" android:scrollbars="vertical"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:layout_below="@id/searchBox" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/card_view_route_details" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:layout_margin="@dimen/margin_4dp" card_view:cardCornerRadius="@dimen/margin_4dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip">
+
+        <TextView
+            android:id="@+id/amenityType"
+            android:textSize="@dimen/material_text_subhead" android:textColor="@color/material_black_1000"
+            android:gravity="left" android:layout_width="0.0dip"
+            android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_8dp"
+            android:text="@string/amenityType" android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/amenityValue"
+            android:textSize="@dimen/material_text_subhead" android:textColor="@color/material_black_1000"
+            android:gravity="right" android:layout_width="0.0dip"
+            android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Amenity Value" android:layout_weight="1.0" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

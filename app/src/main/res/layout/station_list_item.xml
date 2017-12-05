@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@+id/layout_route_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/line_color" android:layout_width="80.0dip" android:layout_height="80.0dip"
+        android:layout_margin="@dimen/activity_horizontal_margin" android:src="@drawable/round_rect_shape" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+        <TextView android:textSize="@dimen/material_text_title" android:textStyle="bold" android:id="@+id/station_info" android:textColor="@android:color/black"
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:maxLines="2" />
+        <TextView android:textSize="@dimen/material_text_body2" android:textStyle="italic" android:id="@+id/line_info"
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" />
+        <TextView android:id="@+id/stationId" android:layout_height="0.0dp" android:layout_width="0.0dp" android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pstech.hydmetro.fragments.StationFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:orientation="horizontal" android:id="@+id/station_id"
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <TextView android:id="@+id/txt_station"
+                android:textSize="@dimen/material_text_headline" android:textColor="@android:color/black" android:gravity="left"
+                android:layout_width="0.0dip" android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip" android:layout_marginRight="8.0dip" android:text="@string/station" android:layout_weight="1.0" />
+
+            <ImageView android:id="@+id/station_search_icon" android:layout_width="48.0dip"
+                android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="16.0dip"
+                app:srcCompat="@drawable/ic_search_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stationInfo"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <include android:id="@+id/amenityParking" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin"
+                layout="@layout/fragment_amenities"/>
+
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_5_5_5_10" />
+
+            <include android:id="@+id/amenityMMTS" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin"
+                layout="@layout/fragment_amenities" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_5_5_5_10" />
+            <include android:id="@+id/interchange" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin"
+                layout="@layout/fragment_amenities" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/space_5_5_5_10" />
+            <include android:id="@+id/smartBike" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin"
+                layout="@layout/fragment_amenities" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
